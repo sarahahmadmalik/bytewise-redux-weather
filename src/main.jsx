@@ -4,11 +4,11 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import App from './components/App';
 import rootReducer from './reducers';
-import reduxThunk from 'redux-thunk';
+import { thunk } from 'redux-thunk'
 
 const store = configureStore({
   reducer: rootReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(reduxThunk),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk),
   devTools: process.env.NODE_ENV !== 'production',
 });
 

@@ -19,7 +19,7 @@ const SearchTermInput = props => {
     return (
         <form onSubmit={handleSubmit}>
             <input
-                placeholder="enter your city name"
+                placeholder="Enter city name"
                 className="search-term-input text-center"
                 onChange={handleChange}
                 value={props.searchTerm} type="text"
